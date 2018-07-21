@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1531887969 source:c:\users\ethan\desktop\c++ programs\simplestory\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+
