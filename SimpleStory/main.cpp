@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include <sstream>
 
 using namespace std;
 
@@ -50,8 +51,7 @@ int main()
         section++;
         };
     if(section == 4){
-        cout << "After a short time, you arrive at the bridge with C-15. What do you wish to do?";
-        //cout << name << endl;
+        cout << "4. After a short time, you arrive at the bridge with C-15. What do you wish to do?";
 
 
     };
@@ -62,7 +62,7 @@ int main()
 
     return 0;
 }
-//Keep troubleshooting load and save system
+
 void save(string name) {
     ofstream mysave;
     mysave.open("Save.txt");
@@ -73,12 +73,9 @@ void save(string name) {
 
 void load() {
 
-    ifstream loadFile;
-    loadFile.open ("Save.txt");
-    while (loadFile.good()){
-        cout << loadFile.get();
-        getline(cin, name);
-    }
-    loadFile.close();
+    ifstream file("Save.txt");
+    stringstream buffer;
+    buffer << file.rdbuf();
+    name = buffer.str();
 
 }
