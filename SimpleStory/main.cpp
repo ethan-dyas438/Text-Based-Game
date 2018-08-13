@@ -63,11 +63,11 @@ int main()
     return 0;
 }
 
-void save(string name) {
+void save(string const name) {
     ofstream mysave;
     mysave.open("Save.txt");
     mysave << name;
-    mysave.close();
+    mysave.close(); // Closes save function
 
 }
 
