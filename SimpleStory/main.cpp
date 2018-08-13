@@ -66,7 +66,7 @@ int main()
 void save(string const name) {
     ofstream mysave;
     mysave.open("Save.txt");
-    mysave << name;
+    mysave << name; //save name string to the text file
     mysave.close(); // Closes save function
 
 }
