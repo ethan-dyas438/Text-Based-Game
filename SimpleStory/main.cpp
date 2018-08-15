@@ -10,7 +10,7 @@ int section = 0;
 string name;
 void save(string name);
 void load();
-long size;
+//long size;
 
 int main()
 {
@@ -52,7 +52,7 @@ int main()
         };
     if(section == 4){
         cout << "4. After a short time, you arrive at the bridge with C-15. What do you wish to do?";
-
+        //Add next decision and more story.
 
     };
 
@@ -63,7 +63,7 @@ int main()
     return 0;
 }
 
-void save(string const name) {
+void save(string const name) {  //Saves inputted name variable to Save.txt
     ofstream mysave;
     mysave.open("Save.txt");
     mysave << name; //save name string to the text file
@@ -71,7 +71,7 @@ void save(string const name) {
 
 }
 
-void load() {
+void load() {  //If user loads from a point after section 3 the name variable is loaded from Save.txt
 
     ifstream file("Save.txt");
     stringstream buffer;
