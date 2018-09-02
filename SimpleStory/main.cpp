@@ -28,8 +28,8 @@ int main()
         cin >> FirstChoice;
         if(FirstChoice == "Exit"){
             section++;
-        };
-    };
+        }
+    }
     if(section == 2) {
 
         cout << "2. You exit what appears to be your cryopod and are ";
@@ -49,12 +49,11 @@ int main()
         cout << "Class 5 Star Explorer. I am the ships navigator, you may call me C-15. ";
         cout << "I will now show you to the bridge.'" << endl;
         section++;
-        };
+        }
     if(section == 4){
-        cout << "4. After a short time, you arrive at the bridge with C-15. What do you wish to do?";
+        cout << "4. This story is a work in progress and will continue to receive updates in the future.";
         //Add next decision and more story.
-
-    };
+    }
 
 
 
